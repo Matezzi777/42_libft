@@ -47,6 +47,7 @@ Validated in January 2024 (100%).
 - ft_lstsize - counts the number of element in a list.
 - ft_lstlast - returns the last element of the list.
 - ft_lstadd_back - adds an element at the end of the list.
+- ft_lstdelone - delete and free a node from the list.
 - ft_lstclear - deletes and free list.
 - ft_lstiter - applies a function to each element of a list.
 - ft_lstmap - applies a function to each element of a list.
