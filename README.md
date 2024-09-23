@@ -39,7 +39,7 @@ Validated in January 2024 (100%).
 - ft_putchar_fd - output a char to a file descriptor.
 - ft_putstr_fd - output a string to a file descriptor.
 - ft_putendl_fd - output a string to a file descriptor, followed by a newline.
-- ft_putnbt_fd - output a number to a file descriptor.
+- ft_putnbr_fd - output a number to a file descriptor.
 ### Bonus (coming soon...)
 #### Linked list functions
 - ft_lstnew - creates a new list element
