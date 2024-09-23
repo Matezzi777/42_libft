@@ -1,8 +1,12 @@
-NAME = libft.a
+#################### VARIABLES ####################
+#COMPILING
 CC = gcc
 CCFLAGS = -Wall -Wextra -Werror
 RM = rm -f
-SRC = 	ft_atoi.c \
+NAME = libft.a
+#SOURCES
+DIR_SRCS = srcs/
+SRCS = 	ft_atoi.c \
 		ft_bzero.c \
 		ft_calloc.c \
 		ft_isalnum.c \
@@ -36,22 +40,27 @@ SRC = 	ft_atoi.c \
 		ft_strlcpy.c \
 		ft_strnstr.c \
 		ft_strrchr.c
+#OBJECTS
+OBJS = $(SRCS:.c=.o)
+#COLORS
+RED = \033[1;31m
+LIGHT_GREEN = \033[0;32m
+GREEN = \033[1;32m
+BLUE = \033[0;34m
+CUT = \033[0m
 
-OBJ = $(SRC:.c=.o)
-
+###################### RULES ######################
 all: $(NAME)
-
-$(NAME) : $(OBJ)
-	ar rcs $(NAME) $(OBJ)
-	
-
-$(OBJ) : $(SRC)
-	$(CC) $(CCFLAGS) -c $(SRC) -I./
-
+$(NAME) : $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
+	@echo "$(GREEN)$@				[OK]$(CUT)"
+%.o : $(DIR_SRCS)/%.c
+	@$(CC) $(CCFLAGS) -c $< -I./ -o $@
+	@echo "$(BLUE)$@			$(CUT)$(GREEN)[OK]$(CUT)"
 fclean : clean
-	$(RM) *.a
-
+	@$(RM) $(NAME)
+	@echo "$(BLUE)$(NAME)				$(CUT)$(RED)[DELETE]$(CUT)"
 clean :
-	$(RM) *.o
-
+	@$(RM) *.o
+	@echo "$(BLUE)OBJECTS				$(CUT)$(RED)[DELETE]$(CUT)"
 re : fclean all
