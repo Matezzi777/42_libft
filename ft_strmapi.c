@@ -29,22 +29,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
-
-// #include <stdio.h>
-
-// static char	ft_upper(unsigned int i, char c)
-// {
-// 	if ((c >= 'a' && c <= 'z') && i > 0)
-// 		return (c - 32);
-// 	else
-// 		return (c);
-// }
-
-// int	main()
-// {
-// 	const char	*str;
-// 	str = "Hola, Mundo!";
-// 	str = ft_strmapi(str, ft_upper);
-// 	printf("main: %s\n", str);
-// 	return (0);
-// }

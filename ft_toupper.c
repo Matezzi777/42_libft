@@ -19,13 +19,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char lowercase = 'q';
-// 	char uppercase = ft_toupper(lowercase);
-// 	printf("%c\n", uppercase);
-// 	return (0);
-// }

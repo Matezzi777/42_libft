@@ -26,22 +26,3 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	buff[10] ="-hello all";
-// 	int	i;
-
-// 	printf("the word before bzero is %s\n", buff);
-// 	ft_bzero(&buff, 5);
-// 	i = 0;
-// 	while (i < 10)
-// 	{
-// 		printf("the word  afetr bzero is %d\n", buff[i] );
-// 		i++;
-// 	}
-
-// 	return (0);
-// }

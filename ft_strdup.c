@@ -31,17 +31,3 @@ char	*ft_strdup(const char *source)
 	copy[i] = '\0';
 	return (copy);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	const char *orig;
-// 	char *dupli;
-
-// 	orig = "'Hola Mundo ----'";
-// 	dupli = ft_strdup(orig);
-// 	printf("Original : %s\nCopie : %s\n", orig, dupli);
-// 	free(dupli);
-// 	return (0);
-// }

@@ -27,20 +27,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	x[10];
-// 	int		i;
-
-// 	printf("%p\n", ft_memset(&x, '0', 10));
-// 	i = 0;
-// 	while (i < 10)
-// 	{
-// 		printf("%c\n", x[i]);
-// 		i++;
-// 	}
-// 	return (0);
-// }

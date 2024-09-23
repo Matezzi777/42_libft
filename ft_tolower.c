@@ -19,13 +19,3 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char upper = 'B';
-// 	char low = ft_tolower(upper);
-// 	printf("%c\n", low);
-// 	return (0);
-// }

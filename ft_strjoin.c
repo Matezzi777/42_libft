@@ -38,19 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i] = '\0';
 	return (str);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	const char	*pref;
-// 	const char	*suff;
-// 	char		*joined;
-
-// 	pref = "Hola ";
-// 	suff = "Que pasa";
-// 	joined = ft_strjoin(pref, suff);
-// 	printf("Joined: %s\n", joined);
-// 	free(joined);
-// 	return (0);
-// }

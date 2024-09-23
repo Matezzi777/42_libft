@@ -53,19 +53,3 @@ char	*ft_strtrim(const char *s1, const char *set)
 	trimmed[i] = '\0';
 	return (trimmed);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	const char	*s1;
-// 	const char	*set;
-// 	char		*trimmed;
-
-// 	s1 = "XXXXXABCXXXCBAXXXXX";
-// 	set = "X";
-// 	trimmed = ft_strtrim(s1, set);
-// 	printf("The trimmed: %s\n", trimmed);
-// 	free(trimmed);
-// 	return (0);
-// }

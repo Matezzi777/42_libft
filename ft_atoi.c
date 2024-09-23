@@ -31,18 +31,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result * sign);
 }
-
-// #include <stdio.h>
-
-// int	main(int ac, char **av)
-// {
-// 	int	mine;
-// 	int	c;
-// 	if (ac == 2)
-// 	{
-// 		mine = ft_atoi(av[1]);
-// 		c = atoi(av[1]);
-// 		printf("Main is: %d\n C is: %d\n", mine, c);
-// 	}
-// 	return (0);
-// }
