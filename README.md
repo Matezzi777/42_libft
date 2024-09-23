@@ -1,5 +1,6 @@
 ## Libft
-Project from 42 Cursus
+Project from 42 Cursus.
+Validated in January 2024 (100%).
 ### Functions :
 #### Functions from `<ctype.h>` :
 - ft_isalpha - checks for an alphabetic character.
